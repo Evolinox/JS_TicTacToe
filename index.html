@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+    <body>
+        <div class="main">
+            <header class="title">Tic Tac Toe</header>
+            <div class="gamemodeSelect">
+                <p class="paragraph">Select Gamemode</p>
+                <div class="modes">
+                    <div class="gamemodeItem">
+                        <img src="src/pvpIcon.png" alt="PvP" class="previewImg">
+                        <p class="modeDescription">Play together with a friend on the same Machine!</p>
+                        <button class="goButton" type="button" onclick="startLocalMP();">Go!</button>
+                    </div>
+                    <div class="gamemodeItem">
+                        <img src="src/pveIcon.png" alt="PvE" class="previewImg">
+                        <p class="modeDescription">Play against the Computer</p>
+                        <button class="goButton" type="button" onclick="startLocalSP();">Go!</button>
+                    </div>
+                </div>
+                <div class="settings">
+                    <button class="button" type="button" onclick="toggleMusic();">
+                        <img src="src/play.svg" alt="Toggle Music" id="music" class="icon">
+                    </button>
+                    <button class="button" type="button" onclick="toggleAppearance(this);">
+                        <img src="src/moon.svg" alt="Toggle Nightmode" id="nightmode" class="icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
+</html>

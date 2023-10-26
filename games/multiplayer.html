@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Multiplayer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/gamestyle.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css">
+        <link rel="stylesheet" href="https://unpkg.com/css.gg@2.0.0/icons/css/music.css">
+    </head>
+    <body>
+        <header class="title">Multiplayer</header>
+        <div class="main">
+            <div class="gameField">
+                <button class="placeButton" id="1" type="button" onclick="placeMarker(1);">
+                    <img class ="img" id="placeImageHere_1" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="2" type="button" onclick="placeMarker(2);">
+                    <img class ="img" id="placeImageHere_2" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="3" type="button" onclick="placeMarker(3);">
+                    <img class ="img" id="placeImageHere_3" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="4" type="button" onclick="placeMarker(4);">
+                    <img class ="img" id="placeImageHere_4" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="5" type="button" onclick="placeMarker(5);">
+                    <img class ="img" id="placeImageHere_5" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="6" type="button" onclick="placeMarker(6);">
+                    <img class ="img" id="placeImageHere_6" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="7" type="button" onclick="placeMarker(7);">
+                    <img class ="img" id="placeImageHere_7" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="8" type="button" onclick="placeMarker(8);">
+                    <img class ="img" id="placeImageHere_8" src="../src/blank.png">
+                </button>
+                <button class="placeButton" id="9" type="button" onclick="placeMarker(9);">
+                    <img class ="img" id="placeImageHere_9" src="../src/blank.png">
+                </button>
+            </div>
+            <div class="gameStatus">
+                <h1 id="status">Status</h1>
+            </div>
+            <div class="gameButtons">
+                <button class="wideButton" id="playAgain" type="button" onclick="restart();">Play Again</button>
+                <button class="wideButton" id="playAgain" type="button" onclick="toMenu();">Go to Menu</button>
+            </div>
+        </div>
+        <button class="exitButton" type="button" onclick="toMenu();">|<</button>
+        <script type="text/javascript" src="../scripts/game.js"></script>
+    </body>
+</html>

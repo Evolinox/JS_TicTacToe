@@ -1,0 +1,121 @@
+html {
+    --border-radius: 15px;
+    --background: #FCFCFC;
+    --background-panel: #EEEEEE;/*box container*/
+    --color-headings: #00ADB5;/*heading*/
+    --color-text: #393e46;/*paragraph*/
+}
+
+html[ui-theme='dark'] {
+    --background: #232931;
+    --background-panel: #393E46;
+    --color-headings: #00ADB5;
+    --color-text: #d7d7d7;
+}
+
+html[ui-theme='special'] {
+    --background: #0a2647;
+    --background-panel: #144272;
+    --color-headings: #205295;
+    --color-text: #2c74b3;
+}
+
+* {
+    color: var(--color-text);
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.title {
+    width: 100%;
+    height: 80px;
+    color: var(--color-headings);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.gamemodeSelect {
+    max-width: 500px;
+    height: 440px;
+    margin: 15px auto auto auto;
+    background-color: var(--background-panel);
+    border-radius: var(--border-radius);
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.gamemodeItem {
+    display: flex;
+    justify-content:space-between;
+    margin: 15px;
+    background-color: var(--color-headings);
+    border-radius: var(--border-radius);
+}
+
+.previewImg {
+    margin: 15px;
+    width: 85px;
+    height: 85px;
+    border-radius: var(--border-radius);
+}
+
+.modeDescription {
+    max-width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.goButton {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+    background-color: rgb(39, 162, 39);
+    border-radius: var(--border-radius);
+}
+
+.settings {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    margin: 25px 25px 25px 25px;
+    background-color: var(--background-panel);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    align-content: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 11px;
+}
+
+html.transition,
+ html.transition *,
+ html.transition *:before,
+ html.transition *:after {
+   transition: all 400ms !important;
+   transition-delay: 0 !important;
+}
