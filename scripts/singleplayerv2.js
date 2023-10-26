@@ -1,4 +1,4 @@
-var woodBoard = Array.from(Array(9).keys());;
+var woodBoard = Array.from(Array(9).keys());
 const human = "A";
 const computer = "B";
 const combinations = [
@@ -15,6 +15,7 @@ const combinations = [
 let playerSelection = [human, computer];
 let currentPlayer = playerSelection[Math.floor(Math.random() * playerSelection.length)];
 // Start
+// Force currentPlayer to be human on first Round, because the Computer cant handle it atm :D
 currentPlayer = human;
 setStatus(`It's your turn!`);
 
@@ -32,6 +33,7 @@ window.onload = function() {
       isInDarkMode = true;
     }
 }
+
 // Go back to the Homepage
 function toMenu() {
     window.location.href = "../index.html";
@@ -134,10 +136,11 @@ function getEmptySquares() {
 // Get best spot calculated by Minimax Algorithm
 function getSpot() {
     let res = executeMinimax(woodBoard, computer).index;
-    console.log("executeMinimax: Best Marker for next Round: " + res);
+    console.log("executeMinimax: Best Spot for next Round: " + res);
     return res;
 }
 
+//Minimax algorithm to search for the best Spot on the board for the next round
 function executeMinimax(board, player) {
     var emptySquares = getEmptySquares();
 
